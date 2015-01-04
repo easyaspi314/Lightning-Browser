@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+~ Copyright 2013 Philip Schiffer
+~
+~ Licensed under the Apache License, Version 2.0 (the "License");
+~ you may not use this file except in compliance with the License.
+~ You may obtain a copy of the License at
+~
+~ http://www.apache.org/licenses/LICENSE-2.0
+~
+~ Unless required by applicable law or agreed to in writing, software
+~ distributed under the License is distributed on an "AS IS" BASIS,
+~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~ See the License for the specific language governing permissions and
+~ limitations under the License.
+-->
+
+<!-- TODO: Can you fix references here? See https://github.com/PSDev/LicensesDialog/ -->
+<notices>
+    <notice>
+        <name>Lightning Browser</name>
+        <url>https://github.com/anthonycr/Lightning-Browser</url>
+        <copyright>Copyright 2014 A.C.R. Development</copyright>
+        <license>Mozilla Public License, version 2.0</license>
+    </notice>
+    
+    <notice>
+        <name>AOSP</name>
+        <url>http://android.googlesource.com/</url>
+        <copyright>Copyright 2013 The Android Open Source Project</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>NetCipher</name>
+        <url>https://github.com/guardianproject/NetCipher/</url>
+        <copyright>Copyright (c) 2009-2010, Nathan Freitas, The Guardian Project</copyright>
+        <license>BSD 3-Clause License</license>
+    </notice>
+</notices>
