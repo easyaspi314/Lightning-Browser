@@ -19,6 +19,13 @@
         <item>@string/action_webpage</item>
     </string-array>
     
+    <string-array name="render_values">
+		<item>@string/name_normal</item>
+		<item>@string/name_inverted</item>
+		<item>@string/name_grayscale</item>
+		<item>@string/name_inverted_grayscale</item>
+	</string-array>
+    
     <string-array name="text_size">
         <item>@string/size_largest</item>
         <item>@string/size_large</item>
@@ -26,4 +33,52 @@
         <item>@string/size_small</item>
         <item>@string/size_smallest</item>
     </string-array>
+    
+    	<string-array name="search">
+		<item>@string/custom_url</item>
+		<item>Google</item>
+		<item>Android Search</item>
+		<item>Bing</item>
+		<item>Yahoo!</item>
+		<item>StartPage</item>
+		<item>"StartPage (@string/agent_mobile)"</item>
+		<item>DuckDuckGo (privacy)</item>
+		<item>DuckDuckGo Lite (privacy)</item>
+		<item>Baidu (Chinese)</item>
+		<item>Yandex (Russian)</item>
+	</string-array>
+		
+	
+	<integer-array name="two_values">
+		<item>0</item>
+		<item>1</item>
+	</integer-array>
+	
+	<integer-array name="four_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</integer-array>
+
+	<integer-array name="five_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</integer-array>
+	
+	<integer-array name="eleven_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+	</integer-array>
 </resources>
