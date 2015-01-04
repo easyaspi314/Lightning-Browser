@@ -188,4 +188,8 @@
     <string name="bookmark_settings">Bookmark Settings</string>
     <string name="import_bookmark_error">Could not import bookmarks from file</string>
     <string name="title_chooser">Choose a file</string>
+    <string name="lightning_updated">has updated!</string>
+    <string name="lightning_updated_contentDesc">Lightning has updated!</string>
+    <string name="loading">Loading…</string>
+    <string name="generic_summary" translatable="false">%s</string>
 </resources>
