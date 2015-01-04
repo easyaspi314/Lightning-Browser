@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<SwitchPreference
+		android:title="@string/location"
+		android:key="location"
+		android:defaultValue="false"/>
+	<SwitchPreference
+		android:title="@string/fullscreen"
+		android:key="fullscreen"
+		android:defaultValue="false"/>
+	<SwitchPreference
+		android:title="@string/flash"
+		android:key="enableFlash"
+		android:defaultValue="false"/>
+	<SwitchPreference
+		android:title="@string/block_ads"
+		android:key="AdBlock"
+		android:defaultValue="false" />
+	<SwitchPreference
+		android:title="@string/enable_orbot"
+		android:key="useProxy"
+		android:defaultValue="false" />
+		
+	<!-- A ListPreference that stores values as an int 
+		 instead of a String. -->
+	<acr.browser.lightning.IntegerListPreference
+		android:title="@string/agent"
+		android:summary="@string/generic_summary"
+		android:key="agentchoose"
+		android:defaultValue="0"
+		android:entries="@array/user_agent" 
+		android:entryValues="@array/four_values" />
+	<acr.browser.lightning.IntegerListPreference
+		android:title="@string/download"
+		android:summary="@string/generic_summary"
+		android:defaultValue="0"
+		android:key="download"
+		android:entries="@array/download_folder"
+		android:entryValues="@array/five_values" />
+	<acr.browser.lightning.IntegerListPreference
+		android:title="@string/home"
+		android:summary="@string/generic_summary"
+		android:defaultValue="0"
+		android:key="home"
+		android:entries="@array/homepage"
+		android:entryValues="@array/four_values"/>
+	<acr.browser.lightning.IntegerListPreference
+		android:title="@string/search"
+		android:summary="@string/generic_summary"
+		android:key="search"
+		android:defaultValue="1"
+		android:entries="@array/search"
+		android:entryValues="@array/eleven_values" />
+	<acr.browser.lightning.IntegerListPreference
+		android:title="@string/rendering_mode"
+		android:summary="@string/generic_summary"
+		android:key="renderMode"
+		android:defaultValue="0"
+		android:entries="@array/render_values"
+		android:entryValues="@array/four_values" />
+	<Preference
+		android:title="@string/bookmark_settings"
+		android:key="bookmarkPreference">
+		<intent
+			android:targetPackage="acr.browser.lightning"
+			android:targetClass="acr.browser.lightning.BookmarkActivity"/>
+	</Preference>
+	<PreferenceScreen
+		android:title="@string/advanced"
+		android:key="advanced" >
+		<CheckBoxPreference
+			android:title="@string/password"
+			android:summary="@string/recommended"
+			android:key="passwords"
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:title="@string/cache"
+			android:key="cache"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:title="@string/clear_history_exit"
+			android:key="clearHistoryExit"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:title="@string/clear_cookies_exit"
+			android:key="clearCookiesExit"
+			android:defaultValue="false"/>
+		<CheckBoxPreference
+			android:title="@string/java"
+			android:key="java"
+			android:summary="@string/recommended"
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:title="@string/reflow"
+			android:key="textreflow"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:title="@string/block"
+			android:key="blockimages"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:title="@string/window"
+			android:key="newwindow"
+			android:summary="@string/recommended"
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:title="@string/cookies"
+			android:key="cookies"
+			android:summary="@string/recommended"
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:title="@string/incognito_cookies"
+			android:key="incognitocookies"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:title="@string/wideViewPort"
+			android:key="wideviewport"
+			android:summary="@string/recommended" 
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:title="@string/overViewMode"
+			android:key="overflowmode"
+			android:summary="@string/recommended"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:title="@string/restore"
+			android:key="restoreclosed"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:title="@string/fullScreenOption"
+			android:key="hidestatus"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:title="@string/google_suggestions"
+			android:key="GoogleSearchSuggestions"
+			android:summary="@string/powered_by_google"
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:title="@string/sync_history"
+			android:key="syncHistory"
+			android:summary="@string/stock_browser_unavailable"
+			android:defaultValue="false"
+			android:enabled="false" />
+		<Preference
+			android:title="@string/clear_cache"
+			android:key="clearCache" />
+		<Preference
+			android:title="@string/history"
+			android:key="clearHistory" />
+		<Preference
+			android:title="@string/clear_cookies"
+			android:key="clearCookies" />
+		<Preference
+			android:title="@string/importbookmarks"
+			android:key="importfrombrowser"
+			android:summary="@string/stock_browser_unavailable"
+			android:enabled="false" />
+		<acr.browser.lightning.IntegerListPreference
+			android:title="@string/size"
+			android:key="textsize"
+			android:entries="@array/text_size"
+			android:defaultValue="2"
+			android:entryValues="@array/five_values" />
+	</PreferenceScreen>
+	<PreferenceScreen
+		android:title="@string/action_follow_me"
+		android:key="followMe"
+		android:summary="@string/url_twitter">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="http://twitter.com/ACRDevelopment" />
+	</PreferenceScreen>
+	<Preference
+		android:title="@string/licenses"
+		android:key="licenses" />
+	<Preference
+		android:title="@string/version"
+		android:key="version"
+		android:summary=""/>
+</PreferenceScreen>
