@@ -3,6 +3,7 @@ package acr.browser.lightning;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
@@ -16,13 +17,13 @@ public class MainActivity extends BrowserActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mPreferences = getSharedPreferences(PreferenceConstants.PREFERENCES, 0);
+		mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 	}
 
 	@Override
 	public void updateCookiePreference() {
 		if (mPreferences == null) {
-			mPreferences = getSharedPreferences(PreferenceConstants.PREFERENCES, 0);
+			mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 		}
 		mCookieManager = CookieManager.getInstance();
 		CookieSyncManager.createInstance(this);
